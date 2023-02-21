@@ -1,9 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 main {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .grid-container {
@@ -13,7 +16,7 @@ main {
     
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(13, 1fr);
     grid-gap: 1em;
     margin: 1em;
 }
@@ -82,4 +85,19 @@ main {
     background-color: rgb(132, 255, 94);
     grid-row: 7/11;
     grid-column: 6/7;
+}
+
+.twelve {
+    background-color: rgb(132, 255, 94);
+    grid-row: 11/14;
+    grid-column: 1/-1;
+}
+
+.text {
+    background-color: rgb(132, 255, 94);
+    grid-row: 12/13;
+    grid-column: 1/4;
+    font-size: 3em;
+    font-weight: 700;
+    padding-left: 0.5em;
 }
